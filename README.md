@@ -1,6 +1,6 @@
 # Triangle
 
-Triangle is an example program for a software testing exercise that focuses on
+Triangle is an example program for a [software testing exercise](ASSIGNMENT.md) that focuses on
 unit testing and test effectiveness, using code coverage criteria.
 
 #### How to run Triangle tests from the terminal
