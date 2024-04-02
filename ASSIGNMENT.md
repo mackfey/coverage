@@ -1,21 +1,3 @@
-# In-class exercise Coverage-based testing: Set up
-
-1. **Make sure [Apache Ant](http://ant.apache.org/)**,
-a **[Java 8 or 11 or 17 JDK](https://www.oracle.com/java/technologies/downloads)**,
-and **[Git](https://git-scm.com/) are installed**.
-(The [set-up tips for Ant](ant_guide.html) may be useful.)
-The required software is already installed on attu.cs.washington.edu, if you prefer to do the exercise there.
-
-2. **Clone** the following **git repository** and read its `README.md` file:
-     [https://bitbucket.org/rjust/coverage](https://bitbucket.org/rjust/coverage)
-
-3. **Test** your **set up**: **compile** and **test** the Triangle program.
-
-4. **Compute the coverage report**: run `ant coverage` and view the coverage report.
-   If you do the exercise on Attu, review the [set-up tips for Attu](attu_coverage_guide.html)
-   to serve the html coverage report computed on Attu.
-
-
 # In-class exercise Coverage-based testing: Instructions
 
 ## High-level goal
@@ -25,15 +7,12 @@ testing and (2) reason about test quality, using code coverage criteria.
 ## Setup
 
 1. Make sure
-a **[Java JDK](https://www.oracle.com/java/technologies/downloads)**
-and **[Git](https://git-scm.com/) are installed**.
+a **[Java JDK](https://www.oracle.com/java/technologies/downloads)** (any version except 22)
+and **[Git](https://git-scm.com/)** are installed.
 
-2. Clone the following git repository and read its `README.md` file and `ASSIGNMENT.md` file:
-     [https://bitbucket.org/rjust/coverage](https://bitbucket.org/rjust/coverage)
+2. Test your setup: compile and test the Triangle program.
 
-3. Test your setup: compile and test the Triangle program.
-
-4. Compute the coverage report, per the instructions in the [README.md](README.md) file.
+3. Compute the coverage report, per the instructions in the [README.md](README.md) file.
 
 ## Instructions
 
@@ -47,7 +26,7 @@ and **[Git](https://git-scm.com/) are installed**.
 
 3. Run `ant coverage` and then **inspect** the coverage report it generates: `coverage_results/index.html`.
 
-5. Develop **4 test suites** (i.e., add tests to the `testTable` method in `TriangleTest.java`)
+4. Develop **4 test suites** (i.e., add tests to the `testTable` method in `TriangleTest.java`)
    that satisfy the following coverage criteria:
     * **SC**: Statement coverage
     * **DC**: Decision coverage
