@@ -24,7 +24,8 @@ and **[Git](https://git-scm.com/)** are installed.
 
 2. Familiarize yourself with the example test suite (`test/triangle/TriangleTest.java`).
 
-3. Run `ant coverage` and then **inspect** the coverage report it generates: `coverage_results/index.html`.
+3. Compute the coverage report, per the instructions in the [README.md](README.md) file.
+   Then, **inspect** the coverage report it generates.
 
 4. Develop **4 test suites** (i.e., add tests to the `testTable` method in `TriangleTest.java`)
    that satisfy the following coverage criteria:
@@ -93,8 +94,3 @@ and **[Git](https://git-scm.com/)** are installed.
 
 ### Steps for turn-in
 One team member should upload the deliverables to Canvas, via the [Canvas submission site](https://canvas.uw.edu/courses/1623674/assignments/7745883) for this course.
-
-## Hints
-* To avoid spurious results and confusion, it is a good idea to **run**
-  `ant clean test` to make sure that your added **tests pass** before
-  computing coverage.
