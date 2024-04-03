@@ -27,9 +27,12 @@ test {
 }
 jacocoTestReport {
   dependsOn test // tests are required to run before generating the report
-  if (new File("/homes/gws/").exists()) {
+  // Depending on where you run this, /homes/gws may not exist.
+  // For example, attu has /homes/iws; checking if /homes/ exists ensures
+  // Test report generation works on any CSE-managed machine.
+  if (new File("/homes/").exists()) {
     reports {
-      html.outputLocation = "/cse/web/homes/" + System.env.USER + "/jacoco_report"
+      html.outputLocation = file("/cse/web/homes/" + System.env.USER + "/jacoco_report")
     }
   }
 }
