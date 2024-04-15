@@ -6,7 +6,9 @@ import static triangle.Triangle.Type.*;
 
 import org.junit.jupiter.api.Test;
 
-/** Test class for the Triangle implementation. */
+/**
+ * Test class for the Triangle implementation, is Decision Coverage compliant.
+ */
 public class TriangleTest {
 
   /** Wrapper to avoid code duplication in test methods. */
@@ -21,7 +23,26 @@ public class TriangleTest {
   }
 
   @Test
-  public void testTable() {
-    testTriangle(INVALID, 0, 0, 0);
+  public void testInvalid() {
+    testTriangle(Type.INVALID, 0, 0, 0);
+    testTriangle(Type.INVALID, 1, 2, 4);
+    testTriangle(Type.INVALID, 2, 2, 4);
+  }
+
+  @Test
+  public void testScalene() {
+    testTriangle(Type.SCALENE, 8, 6, 4);
+  }
+
+  @Test
+  public void testEquilateral() {
+    testTriangle(Type.EQUILATERAL, 1, 1, 1);
+  }
+
+  @Test
+  public void testIsosceles() {
+    testTriangle(Type.ISOSCELES, 2, 2, 1);
+    testTriangle(Type.ISOSCELES, 2, 1, 2);
+    testTriangle(Type.ISOSCELES, 1, 2, 2);
   }
 }
