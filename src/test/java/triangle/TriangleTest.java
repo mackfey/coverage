@@ -7,7 +7,7 @@ import static triangle.Triangle.Type.*;
 import org.junit.jupiter.api.Test;
 
 /**
- * Test class for the Triangle implementation, is Condition Coverage compliant.
+ * Test class for the Triangle implementation, is MCDC Coverage compliant.
  */
 public class TriangleTest {
 
