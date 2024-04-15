@@ -7,7 +7,7 @@ import static triangle.Triangle.Type.*;
 import org.junit.jupiter.api.Test;
 
 /**
- * Test class for the Triangle implementation, is Decision Coverage compliant.
+ * Test class for the Triangle implementation, is Condition Coverage compliant.
  */
 public class TriangleTest {
 
@@ -27,6 +27,12 @@ public class TriangleTest {
     testTriangle(Type.INVALID, 0, 0, 0);
     testTriangle(Type.INVALID, 1, 2, 4);
     testTriangle(Type.INVALID, 2, 2, 4);
+    testTriangle(Type.INVALID, 1, 0, 0);
+    testTriangle(Type.INVALID, 1, 1, 0);
+    testTriangle(Type.INVALID, 1, 3, 2);
+    testTriangle(Type.INVALID, 3, 1, 2);
+    testTriangle(Type.INVALID, 2, 4, 2);
+    testTriangle(Type.INVALID, 4, 2, 2);
   }
 
   @Test
